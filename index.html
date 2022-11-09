@@ -5,69 +5,80 @@
         <meta charset="UTF-8">
         <link rel = "stylesheet" href = "gallery.css">
 
-        <script>
-            function reveal(){
-                var text = "This is a simple web page displaying some information about <i>asana</i> in yoga."
-                document.getElementById('doThis').innerHTML = text 
-                }
-        
-            function reveal1(){
-                var text1 = "This is a website all about me and why I want to move into a career as a web developer"
-                document.getElementById('doThis1').innerHTML= text1
+        <script defer>
+
+            function revealHobbyText(){
+                const hobbyText = "This is a simple web page displaying some information about asana in yoga."
+                document.getElementById("hobby-text").innerText = hobbyText
+            }
+           
+            function revealWebsiteText(){
+                const websiteText = "This is a website all about me and why I want to move into a career as a web developer"
+                document.getElementById('website-text').innerText= websiteText
             }
         
-            function reveal2(){
-                var text2 = "This is simple comment form"
-                document.getElementById('doThis2').innerHTML= text2
+            function revealCommentText(){
+                const commentText = "This is simple comment form"
+                document.getElementById('comment-text').innerText= commentText
             }
         
-            function reveal3(){
-                var text3 = "This is a user interface populated with movie data from Founders and Coders"
-                document.getElementById('doThis3').innerHTML= text3
+            function revealMovieText(){
+                const movieText = "This is a user interface populated with movie data from Founders and Coders"
+                document.getElementById('movie-text').innerText= movieText
+            }
+
+            function revealFeatureText(){
+                const featureText = "This is an automated slide show of some of David Hockney's 20th century work."
+                document.getElementById("feature-text").innerText= featureText
             }
           </script>
           
     </head>
-    <div class="header-text">
+    <div id="header-text">
         <h1>Project Gallery</h1>
     </div>
 
     <body>
-        <div class="gallery-items">
+        <div id="gallery">
 
             <div class="gallery">
-                
                     <h1>Hobby Page</h1>
-                    <a href="https://eliazzo.github.io/hobby/"><img src="Surya_Namaskar_1.jpg" alt="hobby_link" width="40%" height="100%"></a>
-                    <button onclick="reveal()">What's it all about?</button>
-                    <p id="doThis">This is a simple web page displaying some information about <i>asana</i> in yoga.</p>
-                  
+                    <a href="https://eliazzo.github.io/Hobby-page/"><img src="Hobby image.jpg" alt="hobby_link" width="40%" height="100%"></a>
+                    <button onclick="revealHobbyText()">What's it all about?</button>
+                    <p id="hobby-text"></p> 
             </div>
+
             <div class="gallery">
-                
                     <h1> Application Website</h1>
-                    <a href="https://eliazzo.github.io/hobby/"><img src="Darjeeling limited.jpg" alt="website_link" width="40%" height="100%"></a>
-                    <button onclick="reveal1()">What's it all about?</button>
-                    <p id="doThis1"></p>
-                
+                    <a href="https://eliazzo.github.io/hobby/"><img src="Website image.jpg" alt="website_link" width="40%" height="100%"></a>
+                    <button onclick="revealWebsiteText()">What's it all about?</button>
+                    <p id="website-text"></p>
             </div>
+
             <div class="gallery">
-                
                     <h1>Comment form</h1>
-                    <a href="https://eliazzo.github.io/Comment-box/"><img src="Surya_Namaskar_1.jpg" alt="comment_link" width="40%" height="100%"></a>
-                    <button onclick="reveal2()">What's it all about?</button>
-                    <p id="doThis2"></p>
+                    <a href="https://eliazzo.github.io/Comment-box/"><img src="comment screen shot.png"alt="comment_link" width="40%" height="100%"></a>
+                    <button onclick="revealCommentText()">What's it all about?</button>
+                    <p id="comment-text"></p>
                
             </div>
             
             <div class="gallery">
-                
                     <h1>Movie Data</h1>
-                    <a href="https://eliazzo.github.io/movie/"><img src="Darjeeling limited.jpg" alt="movie_link" width="40%" height="100%"></a>
-                    <button onclick="reveal3()">What's it all about?</button>
-                    <p id="doThis3"></p>
+                    <a href="https://eliazzo.github.io/Movie-data/"><img src="Movie image.jpg" alt="movie_link" width="40%" height="100%"></a>
+                    <button onclick="revealMovieText()">What's it all about?</button>
+                    <p id="movie-text"></p>
                 
             </div>
+
+            <div class="gallery">
+                    <h1>Feature</h1>
+                    <a href="https://eliazzo.github.io/Feature/"><img src="feature image.png" alt="feature_link" width="40%" height="100%"></a>
+                    <button onclick="revealFeatureText()">What's it all about?</button>
+                    <p id="feature-text"></p>
+            </div>
+
+        </div>
     
     </body>
 </html>
