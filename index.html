@@ -34,48 +34,49 @@
           </script>
           
     </head>
-    <div id="header-text">
+    <div id="header">
         <h1>Project Gallery</h1>
+        <ul id="section-list">
+            <li><a href="#hobby-section">Hobby Page</a></li>
+            <li><a href="#website-section">Application Website</a></li>
+            <li><a href="#comment-section">Comment Form</a></li>
+            <li><a href="#movie-section">Movie Data</a></li>
+            <li><a href="#feature-section">Feature</a></li>
+
+        </ul>
     </div>
 
     <body>
         <div id="gallery">
 
-            <div class="gallery">
+            <div class="gallery" id="hobby-section">
                     <h1>Hobby Page</h1>
                     <a href="https://eliazzo.github.io/Hobby-page/"><img src="Hobby image.jpg" alt="hobby_link" width="40%" height="100%"></a>
-                    <button onclick="revealHobbyText()">What's it all about?</button>
-                    <p id="hobby-text"></p> 
+                    <button id="hobby-text" onclick="revealHobbyText()">What's it all about?</button>
             </div>
 
-            <div class="gallery">
+            <div class="gallery" id="website-section">
                     <h1> Application Website</h1>
                     <a href="https://eliazzo.github.io/Website-2/"><img src="Website image.jpg" alt="website_link" width="40%" height="100%"></a>
-                    <button onclick="revealWebsiteText()">What's it all about?</button>
-                    <p id="website-text"></p>
+                    <button id="website-text" onclick="revealWebsiteText()">What's it all about?</button>
             </div>
 
-            <div class="gallery">
+            <div class="gallery" id="comment-section">
                     <h1>Comment form</h1>
                     <a href="https://eliazzo.github.io/Comment-box/"><img src="comment screen shot.png"alt="comment_link" width="40%" height="100%"></a>
-                    <button onclick="revealCommentText()">What's it all about?</button>
-                    <p id="comment-text"></p>
-               
+                    <button id="comment-text" onclick="revealCommentText()">What's it all about?</button>
             </div>
             
-            <div class="gallery">
+            <div class="gallery" id="movie-section">
                     <h1>Movie Data</h1>
                     <a href="https://eliazzo.github.io/Movie-data/"><img src="Movie image.jpg" alt="movie_link" width="40%" height="100%"></a>
-                    <button onclick="revealMovieText()">What's it all about?</button>
-                    <p id="movie-text"></p>
-                
-            </div>
+                    <button id="movie-text" onclick="revealMovieText()">What's it all about?</button>
+             </div>
 
-            <div class="gallery">
+            <div class="gallery" id="feature-section">
                     <h1>Feature</h1>
                     <a href="https://eliazzo.github.io/Feature/"><img src="feature image.png" alt="feature_link" width="40%" height="100%"></a>
-                    <button onclick="revealFeatureText()">What's it all about?</button>
-                    <p id="feature-text"></p>
+                    <button id="feature-text" onclick="revealFeatureText()">What's it all about?</button>
             </div>
 
         </div>
