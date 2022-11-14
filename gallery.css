@@ -50,14 +50,14 @@ body{
 }
 
 #gallery .gallery{
-    background-color: #b5b5b5;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 8px;
+    margin: 15px;
+    box-shadow: 10px 10px 5px #b5b5b5;
 }
 
 #gallery .gallery h1{
@@ -68,8 +68,7 @@ body{
 
 }
 .gallery img {
-    width: auto;
-    height: 200px;
+    width: 500px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -82,7 +81,6 @@ img:hover {
 
 
 button{
-    background-color: #b5b5b5;
     border: none;
     color: #228B22;;
     font-family: sans-serif;
@@ -91,12 +89,13 @@ button{
     height: 100px;
     letter-spacing: 2px;
     margin-top: 10px;
+    background-color: white;
 
 
 }
 
 button:hover{
-    color: hotpink
+    color: yellow;
 
 }
 
