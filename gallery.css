@@ -76,7 +76,7 @@ body{
 
 }
 .gallery img {
-    width: 500px;
+    width: 100%;
     object-fit: fill;
     display: flex;
     justify-content: center;
@@ -105,13 +105,22 @@ button{
 
 }
 
-/*  @media (max-width: 500px) {
-    #gallery .gallery{
-    width: -webkit-fill-available; 
+  @media (max-width: 500px) {
+    #gallery {
+    display: inline;
+    width: fit-content;
+    
+    
+    /* Keeps the cards within the screen size display */
+    
     }
-    .gallery img {
-     width: -webkit-fill-available; 
-    } 
+   #header{
+    width: fit-content;
+    
+   }
+   #header h1{
+    font: x-large;
+   }
 
-}  */
+} 
 
