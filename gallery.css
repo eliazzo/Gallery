@@ -31,6 +31,7 @@ body{
     list-style: none;
     display: flex;
     justify-content: center;
+    font-size: xx-large;
 }
 
 #section-list a{
@@ -106,21 +107,26 @@ button{
 }
 
   @media (max-width: 500px) {
-    #gallery {
+    /* #gallery {
     display: inline;
-    width: fit-content;
+    width: fit-content; 
     
     
-    /* Keeps the cards within the screen size display */
+     Keeps the cards within the screen size display 
     
     }
    #header{
     width: fit-content;
     
-   }
+   } */
    #header h1{
-    font: x-large;
+    font-size: x-large;
    }
+
+   #header #section-list{
+    font-size: xx-small;
+   }
+
 
 } 
 
