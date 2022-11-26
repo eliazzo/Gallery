@@ -9,27 +9,27 @@
         <script defer>
 
             function revealHobbyText(){
-                const hobbyText = "This is a simple web page using HTML and CSS to display some information about asana in yoga. I have used JavaScript to include the current date."
+                const hobbyText = "This is a simple web page using HTML and CSS to display information about asana in yoga. I have used JavaScript to display the current date at the top of the page."
                 document.getElementById("hobby-text").innerText = hobbyText
             }
            
             function revealWebsiteText(){
-                const websiteText = "This is a website all about me and why I want to move into a career as a web developer. The website mostly uses HTML and CSS, however I have included an image carousel which was created with JavaScript."
+                const websiteText = "This is a website about me and why I want to move into a career as a software developer. The website mostly uses HTML and CSS, however I have included an image carousel which was created with JavaScript."
                 document.getElementById('website-text').innerText= websiteText
             }
         
             function revealCommentText(){
-                const commentText = "This is simple comment form, created with HTML, CSS and JavaScript."
+                const commentText = "This is simple comment form created with HTML, CSS and JavaScript. Users can see their character count change as they input text and are prevented from exceeding the character limit. Users can submit mulitple comments to the page."
                 document.getElementById('comment-text').innerText= commentText
             }
         
             function revealMovieText(){
-                const movieText = "This is a user interface populated with movie data from Founders and Coders. The information you see on the page has all been taken from the movieData object and manipulated onto the HTML page. There is an option to add your own information to the movieData object and display it on the webpage. Hover, click and double click to interact with the page."
+                const movieText = "This is a user interface populated with data provided by FAC. The information you see on the page has all been manipulated from the movieData object onto the HTML page. Hover, click and double click to interact with the page. There is also the option to add your own movie rating to the movieData object and display it on the webpage."
                 document.getElementById('movie-text').innerText= movieText
             }
 
             function revealFeatureText(){
-                const featureText = "This is an automated image carousel of some of David Hockney's 20th century work. Users can move backwards and forwards or watch the slideshow play out automatically."
+                const featureText = "This is an automated image carousel featuring David Hockney's 20th century artwork. Users can click backwards and forwards or watch the slideshow play out automatically. Alternatively, they can use the dots to navigate the carousel. "
                 document.getElementById("feature-text").innerText= featureText
             }
           </script>
@@ -52,7 +52,7 @@
 
             <div class="gallery" id="hobby-section">
                     <h1>Hobby Page</h1>
-                    <a href="https://eliazzo.github.io/Hobby-page/"><img src="Hobby image.jpg" alt="hobby_link" width="40%" height="100%"></a>
+                    <a href="https://eliazzo.github.io/Hobby-page/"><img src="Hobby image.jpg" alt="hobby_link"></a>
                     <button id="hobby-text" onclick="revealHobbyText()">What's it all about?</button>
             </div>
 
@@ -64,7 +64,7 @@
 
             <div class="gallery" id="comment-section">
                     <h1>Comment form</h1>
-                    <a href="https://eliazzo.github.io/Comment-box/"><img src="comment.png"alt="comment_link" id="comment-image"></a>
+                    <a href="https://eliazzo.github.io/Comment-box/"><img src="comment-form.png"alt="comment_link" id="comment-image"></a>
                     <button id="comment-text" onclick="revealCommentText()">What's it all about?</button>
             </div>
             
