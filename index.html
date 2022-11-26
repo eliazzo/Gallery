@@ -32,6 +32,19 @@
                 const featureText = "This is an automated image carousel featuring David Hockney's 20th century artwork. Users can click backwards and forwards or watch the slideshow play out automatically. Alternatively, they can use the dots to navigate the carousel. "
                 document.getElementById("feature-text").innerText= featureText
             }
+
+//Revert to original button text
+
+            function buttonTextOriginal(){
+                const originalButtonText = "What's it all about?";
+                const buttonList = document.querySelectorAll(".button-text");
+                console.log(buttonList)
+
+                for(let i = 0; i < buttonList.length; i++){
+                    buttonList[i].innerHTML = originalButtonText
+                }
+
+            }
           </script>
           
     </head>
@@ -53,31 +66,31 @@
             <div class="gallery" id="hobby-section">
                     <h1>Hobby Page</h1>
                     <a href="https://eliazzo.github.io/Hobby-page/"><img src="Hobby image.jpg" alt="hobby_link"></a>
-                    <button id="hobby-text" onclick="revealHobbyText()">What's it all about?</button>
+                    <button class="button-text" id="hobby-text" onclick="revealHobbyText()" onmouseout="buttonTextOriginal()">What's it all about?</button>
             </div>
 
             <div class="gallery" id="website-section">
                     <h1> Application Website</h1>
                     <a href="https://eliazzo.github.io/Website-2/"><img src="Website image.jpg" alt="website_link"></a>
-                    <button id="website-text" onclick="revealWebsiteText()">What's it all about?</button>
+                    <button class="button-text" id="website-text" onclick="revealWebsiteText()" onmouseout="buttonTextOriginal()">What's it all about?</button>
             </div>
 
             <div class="gallery" id="comment-section">
                     <h1>Comment form</h1>
                     <a href="https://eliazzo.github.io/Comment-box/"><img src="comment-form.png"alt="comment_link" id="comment-image"></a>
-                    <button id="comment-text" onclick="revealCommentText()">What's it all about?</button>
+                    <button class="button-text" id="comment-text" onclick="revealCommentText()" onmouseout="buttonTextOriginal()">What's it all about?</button>
             </div>
             
             <div class="gallery" id="movie-section">
                     <h1>Movie Data</h1>
                     <a href="https://eliazzo.github.io/Movie-data/"><img src="darjeeling.jpg" alt="movie_link"></a>
-                    <button id="movie-text" onclick="revealMovieText()">What's it all about?</button>
+                    <button class="button-text" id="movie-text" onclick="revealMovieText()" onmouseout="buttonTextOriginal()">What's it all about?</button>
              </div>
 
             <div class="gallery" id="feature-section">
                     <h1>Feature</h1>
                     <a href="https://eliazzo.github.io/Feature-2/"><img src="splash.png" alt="feature_link"></a>
-                    <button id="feature-text" onclick="revealFeatureText()">What's it all about?</button>
+                    <button class="button-text" id="feature-text" onclick="revealFeatureText()" onmouseout="buttonTextOriginal()">What's it all about?</button>
             </div>
 
         </div>
